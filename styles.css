@@ -1,6 +1,5 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* Fondo con tu imagen rosada (está en la raíz) */
 .fondo {
   position: fixed;
   top: 0; left: 0;
@@ -9,7 +8,6 @@
   z-index: 0;
 }
 
-/* Carrusel infinito (columnas rodando) */
 .carrusel {
   position: fixed;
   top: 0; left: 0;
@@ -21,11 +19,11 @@
 }
 .pista {
   display: flex;
-  animation: rodar 30s linear infinite; /* Velocidad suave */
+  animation: rodar 30s linear infinite;
   gap: 20px;
 }
 .pista img {
-  height: 80vh; /* Altura de las fotos */
+  height: 80vh;
   width: auto;
   border-radius: 15px;
   object-fit: cover;
@@ -33,10 +31,9 @@
 }
 @keyframes rodar {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); } /* Como están duplicadas, funciona perfecto */
+  100% { transform: translateX(-50%); }
 }
 
-/* Recuadro transparente superpuesto */
 .recuadro {
   position: fixed;
   top: 10%; left: 10%;
@@ -80,10 +77,14 @@
   color: #333;
 }
 
-/* Responsive para móvil */
 @media (max-width: 600px) {
   .texto { font-size: 1.4rem; }
   .flecha { font-size: 1.8rem; padding: 5px 12px; }
   .pista img { height: 50vh; }
   .recuadro { top: 5%; left: 5%; width: 90%; height: 90%; }
+}
+
+/* Ocultar flechas cuando no correspondan */
+.flecha.oculta {
+  display: none;
 }
