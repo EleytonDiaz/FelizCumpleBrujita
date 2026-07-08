@@ -55,17 +55,17 @@
 }
 
 .texto {
-  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
-  font-size: 2rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 2.2rem;
   text-align: justify;
-  color: #fff;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
+  color: #000; /* Cambiado a negro */
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8); /* Sombra blanca para que contraste sobre el fondo */
   flex: 1;
   padding: 10px 20px;
   max-height: 100%;
   overflow-y: auto;
   word-wrap: break-word;
-  line-height: 1.6;
+  line-height: 1.5;
   scrollbar-width: thin;
   scrollbar-color: rgba(255,255,255,0.3) transparent;
 }
