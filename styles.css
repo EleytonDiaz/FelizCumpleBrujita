@@ -51,26 +51,25 @@
   padding: 30px;
   box-shadow: 0 0 50px rgba(0,0,0,0.3);
   border: 1px solid rgba(255,255,255,0.2);
-  overflow: hidden; /* Para que el contenido no se salga */
+  overflow: hidden;
 }
 
 .texto {
-  font-family: 'Monsieur La Doulaise', cursive;
-  font-size: 2.2rem;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
+  font-size: 2rem;
   text-align: justify;
   color: #fff;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
   flex: 1;
   padding: 10px 20px;
   max-height: 100%;
-  overflow-y: auto;  /* Scroll si el texto es muy largo */
+  overflow-y: auto;
   word-wrap: break-word;
-  line-height: 1.5;
+  line-height: 1.6;
   scrollbar-width: thin;
   scrollbar-color: rgba(255,255,255,0.3) transparent;
 }
 
-/* Personalizar scroll para Chrome/Safari */
 .texto::-webkit-scrollbar {
   width: 6px;
 }
@@ -93,7 +92,7 @@
   transition: 0.3s;
   text-shadow: 0 0 15px rgba(0,0,0,0.5);
   backdrop-filter: blur(4px);
-  flex-shrink: 0; /* Evita que se encojan */
+  flex-shrink: 0;
 }
 .flecha:hover { 
   background: rgba(255, 255, 255, 0.5); 
@@ -106,9 +105,9 @@
 /* Responsive para móvil */
 @media (max-width: 600px) {
   .texto {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 5px 10px;
-    line-height: 1.4;
+    line-height: 1.5;
   }
   .flecha {
     font-size: 1.8rem;
